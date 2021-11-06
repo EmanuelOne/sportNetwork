@@ -34,7 +34,7 @@ const PostCard = ({ post: { image, category, headline, content } }) => {
         >
           {content}
         </Typography>
-        <Button variant="contained" color="secondary">
+        <Button variant="contained" color="secondary" size="medium">
           Read More
         </Button>
       </Box>

@@ -5,17 +5,24 @@ import logoSrc from "assets/images/logo.png";
 import { Link } from "react-router-dom";
 const Header = () => {
   return (
-    <HeaderStyle>
-      <div className="logo">
-        <img src={logoSrc} />
-      </div>
-      <div className="nav-links">
-        <Link to="/">Basket Ball</Link>
-        <Link to="/">Contact</Link>
-      </div>
-    </HeaderStyle>
+    <div>
+      <Divider />
+      <HeaderStyle>
+        <div className="logo">
+          <img src={logoSrc} />
+        </div>
+        <div className="nav-links">
+          <Link to="/">Basket Ball</Link>
+          <Link to="/">Contact</Link>
+        </div>
+      </HeaderStyle>
+    </div>
   );
 };
+const Divider = styled("div")({
+  height: "40px",
+  backgroundColor: "#111",
+});
 const HeaderStyle = styled(Box)`
   background-color: #fff;
   height: 50px;

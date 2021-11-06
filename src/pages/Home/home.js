@@ -4,8 +4,8 @@ import React from "react";
 import Deposition from "assets/images/depositionalBg.jpg";
 import salahBg from "assets/images/salahBg.png";
 import HeroImage from "assets/images/HeroImage.png";
-
-import { Button, Divider, Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 import previewImage from "assets/images/previewImage.png";
 import PostCard from "components/Post/postCard/postCard";
 import postLists from "./postList.json";
@@ -63,24 +63,46 @@ const Home = () => {
           </div>
         </Box>
       </Box>
-      <Divider variant="inset" component="div" />
+      <div className="divider" />
       <Box className="post-list">
         {postLists.map((post, key) => (
           <PostCard {...{ post, key }} />
         ))}
+      </Box>
+      <Box className="our-team">
+        <div className="our-team-content">
+          <Typography variant="h4" color="primary" sx={{ fontWeight: 600 }}>
+            Our Team
+          </Typography>
+          <Typography variant="p" color="text" component="p">
+            Our team of workers are head down filed with potentials capable of
+            promoting {<Link to="/">African sports </Link>}
+            and importantly create a promising for young talents in the future
+          </Typography>
+        </div>
+        <div className="our-team-slider"></div>
       </Box>
     </HomeStyle>
   );
 };
 const HomeStyle = styled("div")`
   /* background-color: #f0f; */
-
+  .makeStyles-itemWrapper-3 {
+    height: 100%;
+  }
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  .divider {
+    height: 10px;
+    width: 30%;
+    background-color: #000;
+    margin: 1rem 10px 1rem auto;
+    border-radius: 2px;
+  }
   .hero-section {
     color: rgba(255, 255, 255, 0.7);
     max-width: 100%;
@@ -137,6 +159,34 @@ const HomeStyle = styled("div")`
     gap: 3rem 2rem;
     padding: 10px 30px;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .our-team {
+    background-color: #111111;
+    /* height: 100vh; */
+    width: 100%;
+    display: flex;
+    padding: 50px 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .our-team-content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+      p {
+        color: white;
+        width: 70%;
+        word-break: normal;
+        a {
+          color: #fce61d;
+          &:hover {
+            color: rgba(252, 230, 29, 0.8);
+          }
+        }
+      }
+    }
   }
 `;
 export default Home;
