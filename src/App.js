@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "index.css";
 import Home from "pages/Home/home";
 import Header from "components/Header/header";
+import Footer from "components/Footer/footer";
 
 export default function App() {
   const theme = createTheme({
@@ -32,6 +33,7 @@ export default function App() {
             <Route path="/" component={Home}></Route>
           </Switch>
         </BrowserRouter>
+        <Footer />
       </ThemeProvider>
     </Box>
   );

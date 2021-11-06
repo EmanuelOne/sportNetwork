@@ -25,7 +25,7 @@ const Divider = styled("div")({
 });
 const HeaderStyle = styled(Box)`
   background-color: #fff;
-  height: 50px;
+  height: 80px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -33,7 +33,7 @@ const HeaderStyle = styled(Box)`
   .logo {
     background: #fce61d;
     clip-path: polygon(0 0, 100% 0, 76% 100%, 0 100%);
-    padding: 10px 40px 10px 20px;
+    padding: 10px 60px 10px 20px;
     height: 100%;
     img {
       height: 100%;

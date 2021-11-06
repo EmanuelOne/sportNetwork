@@ -27,7 +27,7 @@ const Home = () => {
           }}
           className="hero-body"
         >
-          <Typography variant="h3" color="primary">
+          <Typography variant="h3" color="primary" sx={{ fontWeight: 600 }}>
             Get Latest Sports News Here
           </Typography>
           <Typography variant="h6" color="text">
@@ -87,9 +87,7 @@ const Home = () => {
 };
 const HomeStyle = styled("div")`
   /* background-color: #f0f; */
-  .makeStyles-itemWrapper-3 {
-    height: 100%;
-  }
+
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -131,8 +129,8 @@ const HomeStyle = styled("div")`
     }
   }
   .hero-body {
-    max-width: 50%;
-    width: 100%;
+    padding-right: 20px;
+    width: 50%;
   }
   .preview {
     min-height: 40vh;
@@ -164,6 +162,7 @@ const HomeStyle = styled("div")`
     background-color: #111111;
     /* height: 100vh; */
     width: 100%;
+    min-height: 40vh;
     display: flex;
     padding: 50px 80px;
     flex-direction: column;
