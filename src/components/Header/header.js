@@ -79,6 +79,9 @@ const HeaderStyle = styled(Box)`
       display: none;
     }
   }
+  .menus{
+    display:none;
+  }
   @media (max-width: 768px) {
     nav {
       padding: 20px 20px 0;
