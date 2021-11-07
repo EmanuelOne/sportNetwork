@@ -8,10 +8,11 @@ import { Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import previewImage from "assets/images/previewImage.png";
 import PostCard from "components/Post/postCard/postCard";
-import postLists from "./postList.json"
-import sliderInfo from "./slider.info.json"
-import TeamSlider from "components/slider/teamSlider"
+import postLists from "./postList.json";
+import sliderInfo from "./slider.info.json";
+import TeamSlider from "components/slider/teamSlider";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
 
 const settings = {
   dots: true,
@@ -20,6 +21,7 @@ const settings = {
   slidesToShow: 4,
   slidesToScroll: 4,
   initialSlide: 0,
+  autoPlay: true,
   responsive: [
     {
       breakpoint: 1024,
@@ -27,26 +29,26 @@ const settings = {
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
-        dots: true
-      }
+        dots: true,
+      },
     },
     {
       breakpoint: 600,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
-        initialSlide: 2
-      }
+        initialSlide: 2,
+      },
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
-}
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};
 
 const Home = () => {
   return (
@@ -124,15 +126,31 @@ const Home = () => {
           </Typography>
         </div>
         <div className="our-team-slider">
- 
-        <Slider {...settings}>
-        {sliderInfo.map((info, key) => (
-          <TeamSlider{...{ info, key }} />
-        ))}
-        </Slider>
-      
+          <Slider {...settings}>
+            {sliderInfo.map((info, key) => (
+              <div className="slide-body">
+                <img src={info.image} alt="" />
+                <div className="slide-content">
+                  <Typography variant="h5" color="text" component="h5">
+                    {info.name}
+                  </Typography>
+                  <Typography variant="h6" color="text" component="p">
+                    {info.role}
+                  </Typography>
+                </div>
+              </div>
+            ))}
+          </Slider>
         </div>
       </Box>
+      <Box
+        sx={{
+          minHeight: "50vh",
+          width: "100%",
+          background: "#000",
+          marginTop: "-2%",
+        }}
+      ></Box>
     </HomeStyle>
   );
 };
@@ -217,10 +235,41 @@ const HomeStyle = styled("div")`
     width: 100%;
     min-height: 40vh;
     display: flex;
+    z-index: 5;
     padding: 50px 80px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 3rem;
+    .our-team-slider {
+      width: 100%;
+      .slick-slide img {
+        width: 90%;
+        z-index: 5;
+      }
+      .slick-dots li button:before {
+        color: white;
+      }
+      .slide-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .slide-content {
+          background-color: #fce61d;
+          color: #111;
+          width: 90%;
+          border-radius: 0 0 10px 10px;
+          margin-top: -10px;
+          padding: 30px 20px 20px;
+          text-align: left;
+          h5 {
+            font-size: 20px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
     .our-team-content {
       width: 100%;
       display: flex;
@@ -230,8 +279,9 @@ const HomeStyle = styled("div")`
 
       p {
         color: white;
-        width: 70%;
+        width: 50%;
         word-break: normal;
+        line-height: 1.8;
         a {
           color: #fce61d;
           &:hover {
