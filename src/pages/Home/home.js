@@ -8,7 +8,46 @@ import { Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import previewImage from "assets/images/previewImage.png";
 import PostCard from "components/Post/postCard/postCard";
-import postLists from "./postList.json";
+import postLists from "./postList.json"
+import sliderInfo from "./slider.info.json"
+import TeamSlider from "components/slider/teamSlider"
+import Slider from "react-slick";
+
+const settings = {
+  dots: true,
+  infinite: false,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  initialSlide: 0,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        initialSlide: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+}
+
 const Home = () => {
   return (
     <HomeStyle bgimages={[Deposition, salahBg]}>
@@ -84,7 +123,15 @@ const Home = () => {
             and importantly create a promising for young talents in the future
           </Typography>
         </div>
-        <div className="our-team-slider"></div>
+        <div className="our-team-slider">
+ 
+        <Slider {...settings}>
+        {sliderInfo.map((info, key) => (
+          <TeamSlider{...{ info, key }} />
+        ))}
+        </Slider>
+      
+        </div>
       </Box>
     </HomeStyle>
   );

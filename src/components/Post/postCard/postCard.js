@@ -4,6 +4,7 @@ import { Button, Box as MUICard, Typography } from "@mui/material";
 import { Box, styled } from "@mui/system";
 const PostCard = ({ post: { image, category, headline, content } }) => {
   return (
+    
     <Card className="card" sx={{ display: "flex" }}>
       <Box classname="post-image">
         <img src={image} alt="" />
