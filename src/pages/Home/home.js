@@ -250,7 +250,7 @@ const HomeStyle = styled("div")`
       .hero-body {
         width: 100%;
         padding-right: 0;
-        padding: 20px 50px;
+        padding: 0px 20px 20px;
         gap: 2rem;
         h3 {
           font-size: 40px;
