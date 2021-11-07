@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <HomeStyle bgimages={[Deposition, salahBg]}>
       <Box className="hero-section" sx={{ height: "100%", display: "flex" }}>
-        <Box>
+        <Box className="error-container">
           <img src={HeroImage} alt="" />
         </Box>
         <Box
@@ -22,15 +22,19 @@ const Home = () => {
             alignItems: "center",
             flexDirection: "column",
             justifyContent: "center",
-            gap: "2rem",
+            gap: "4rem",
             width: "90%",
           }}
           className="hero-body"
         >
-          <Typography variant="h3" color="primary" sx={{ fontWeight: 600 }}>
+          <Typography
+            variant="h3"
+            color="primary"
+            sx={{ fontWeight: 600, width: "80%" }}
+          >
             Get Latest Sports News Here
           </Typography>
-          <Typography variant="h6" color="text">
+          <Typography variant="h6" color="text" sx={{ width: "80%" }}>
             Take highly amazing shots and get your perfect desired images. Take
             your photography skills to a higher level.
           </Typography>
@@ -39,7 +43,7 @@ const Home = () => {
               sx={{ fontSize: "20px", fontWeight: 600 }}
               variant="contained"
               color="primary"
-              size="medium"
+              size="large"
             >
               Register
             </Button>
@@ -49,7 +53,7 @@ const Home = () => {
       </Box>
       {/* preview -> African BasketBall */}
       <Box className="preview">
-        <Button variant="contained" color="secondary" size="medium">
+        <Button variant="contained" color="secondary" size="large">
           African BasketBall
         </Button>
         <Box className="preview-body" sx={{}}>
@@ -113,7 +117,7 @@ const HomeStyle = styled("div")`
     background-position-x: center, right, center;
     background-repeat: no-repeat;
 
-    height: calc(100vh - 80px);
+    height: calc(100vh);
     width: 100%;
     display: flex;
     /* margin-top: 10px; */
@@ -126,6 +130,8 @@ const HomeStyle = styled("div")`
       /* justify-content: space-between; */
       gap: 3rem;
       width: 100%;
+      /* justify-content: center; */
+      width: 80%;
     }
   }
   .hero-body {
@@ -174,6 +180,7 @@ const HomeStyle = styled("div")`
       align-items: center;
       justify-content: center;
       gap: 2.5rem;
+
       p {
         color: white;
         width: 70%;
@@ -184,6 +191,50 @@ const HomeStyle = styled("div")`
             color: rgba(252, 230, 29, 0.8);
           }
         }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .hero-section {
+      height: 100vh;
+      img {
+        display: none;
+      }
+      .hero-body {
+        width: 100%;
+        padding-right: 0;
+        padding: 20px 50px;
+        gap: 2rem;
+        h3 {
+          font-size: 40px;
+          width: 100%;
+        }
+        h6 {
+          width: 100%;
+        }
+        .actions {
+          gap: 1rem;
+          flex-direction: column;
+          width: 100%;
+          button {
+            width: fit-content;
+          }
+        }
+      }
+    }
+    .post-list {
+      grid-template-columns: 1fr;
+    }
+    .preview {
+      padding: 10px 30px;
+      img {
+        width: 100%;
+      }
+    }
+    .our-team {
+      padding: 50px 20px;
+      .our-team-content {
+        flex-direction: column;
       }
     }
   }

@@ -34,7 +34,7 @@ const PostCard = ({ post: { image, category, headline, content } }) => {
         >
           {content}
         </Typography>
-        <Button variant="contained" color="secondary" size="medium">
+        <Button variant="contained" color="secondary" size="large">
           Read More
         </Button>
       </Box>
@@ -58,6 +58,12 @@ const Card = styled(MUICard)`
   }
   box-shadow: none;
   gap: 1.5rem;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    .post-body {
+      gap: 2rem;
+    }
+  }
 `;
 
 export default PostCard;

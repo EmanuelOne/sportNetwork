@@ -10,7 +10,9 @@ const Footer = () => {
   return (
     <FooterStyle bgimage={FooterBg}>
       <div className="about">
-        <img src={Logo} alt="logo" />
+        <div className="logo">
+          <img src={Logo} alt="logo" />
+        </div>
         <Typography variant="p" component="p">
           Cras convallis feugiat felis eget venenatis. Sed leo tellus, luctus
           eget ante quis, rutrum dignissim enim. Morbi efficitur tellus non
@@ -43,19 +45,21 @@ const FooterStyle = styled("div")`
   color: #fff;
   min-height: 50vh;
   display: flex;
+
   .about {
     padding: 2rem;
     display: flex;
+    color: rgba(255, 255, 255, 0.6);
     flex-direction: column;
     /* align-items: center; */
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     p {
       width: 50%;
     }
     img {
       width: fit-content;
-      height: 100px;
+      height: 100%;
     }
   }
   .contact {
@@ -63,7 +67,7 @@ const FooterStyle = styled("div")`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
 
     a {
       color: white;
@@ -75,6 +79,19 @@ const FooterStyle = styled("div")`
     }
     svg {
       font-size: 1.2rem;
+    }
+  }
+  @media (max-width: 768px) {
+    padding: 30px 10px;
+    flex-direction: column;
+    .about {
+      gap: 2rem;
+      img {
+        width: 50%;
+      }
+      p {
+        width: 100%;
+      }
     }
   }
 `;
