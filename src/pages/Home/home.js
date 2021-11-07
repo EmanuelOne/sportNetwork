@@ -19,6 +19,7 @@ const settings = {
   infinite: false,
   speed: 500,
   slidesToShow: 4,
+  arrows: false,
   slidesToScroll: 4,
   initialSlide: 0,
   autoPlay: true,
@@ -128,7 +129,7 @@ const Home = () => {
         <div className="our-team-slider">
           <Slider {...settings}>
             {sliderInfo.map((info, key) => (
-              <div className="slide-body">
+              <div className="slide-body" {...{ key, info }}>
                 <img src={info.image} alt="" />
                 <div className="slide-content">
                   <Typography variant="h5" color="text" component="h5">
@@ -150,6 +151,7 @@ const Home = () => {
           background: "#000",
           marginTop: "-2%",
         }}
+        className="team-footer-breaker"
       ></Box>
     </HomeStyle>
   );
@@ -332,7 +334,17 @@ const HomeStyle = styled("div")`
       padding: 50px 20px;
       .our-team-content {
         flex-direction: column;
+        p {
+          width: 100%;
+        }
+        h4 {
+          text-align: left;
+          width: 100%;
+        }
       }
+    }
+    .team-footer-breaker {
+      display: none;
     }
   }
 `;

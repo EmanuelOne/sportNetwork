@@ -8,22 +8,17 @@ import Typography from "@mui/material/Typography";
 
 export default function Slider({ info: { name, image, role } }) {
   return (
-    <Card sx={{ display: "flex" }}>
-      <CardMedia
-        component="img"
-        height="140"
-        image={image}
-        alt="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {name}
+    <div className="slide-body">
+      <img src={info.image} alt="" />
+      <div className="slide-content">
+        <Typography variant="h5" color="text" component="h5">
+          {info.name}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {role}{" "}
+        <Typography variant="h6" color="text" component="p">
+          {info.role}
         </Typography>
-      </CardContent>
-    </Card>
+      </div>
+    </div>
   );
 }
 {
