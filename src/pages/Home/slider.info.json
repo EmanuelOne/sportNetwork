@@ -1,0 +1,32 @@
+[
+  {
+    "name": "John Doe",
+    "image": "/images/postImage1.png",
+    "role": "Executive Manager"
+  },
+  {
+    "image": "/images/postImage2.png",
+    "name": "John Doe",
+    "role": "Executive Manager"
+  },
+  {
+    "name": "John Doe",
+    "image": "/images/postImage3.png",
+    "role": "Executive Manager"
+  },
+  {
+    "name": "John Doe",
+    "image": "/images/postImage4.png",
+    "role": "Executive Manager"
+  },
+  {
+    "name": "John Doe",
+    "image": "/images/postImage1.png",
+    "role": "Executive Manager"
+  },
+  {
+    "image": "/images/postImage2.png",
+    "name": "John Doe",
+    "role": "Executive Manager"
+  }
+]
