@@ -1,5 +1,4 @@
 import React from "react";
-import PostImage from "assets/images/postImage1.png";
 import { Button, Box as MUICard, Typography } from "@mui/material";
 import { Box, styled } from "@mui/system";
 const PostCard = ({ post: { image, category, headline, content } }) => {

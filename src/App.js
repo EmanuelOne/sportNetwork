@@ -3,7 +3,7 @@ import { Box, createTheme, ThemeProvider } from "@mui/material";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 // import {S} from 'react-router'
 import "index.css";
-import Home from "./pages/Home/home";
+import Home from "pages/Home/home";
 import Header from "components/Header/header";
 import Footer from "components/Footer/footer";
 
