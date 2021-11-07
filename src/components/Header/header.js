@@ -18,7 +18,7 @@ const Header = () => {
   });
   return (
     <HeaderStyle {...{ mobile }}>
-      <nav>
+      <nav {...{ ref }}>
         <div className="logo">
           <img src={logoSrc} />
         </div>
@@ -30,7 +30,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="menus" {...{ ref }}>
+        <div className="menus">
           <Link to="/">Basket Ball</Link>
           <Link to="/">Contact</Link>
         </div>
@@ -52,6 +52,9 @@ const HeaderStyle = styled(Box)`
     justify-content: space-between;
     align-items: center;
     border-top: 40px solid #111;
+    .menus {
+      display: none;
+    }
     .logo {
       background: #fce61d;
       clip-path: polygon(0 0, 100% 0, 76% 100%, 0 100%);
