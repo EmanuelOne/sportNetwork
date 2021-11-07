@@ -13,7 +13,7 @@ const Header = () => {
     setMobile(!mobile);
   };
   const ref = useOnclickOutside(() => {
-    console.log("outside");
+    // console.log("outside");
     setMobile(false);
   });
   return (
