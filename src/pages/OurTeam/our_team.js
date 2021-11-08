@@ -44,15 +44,15 @@ const Box = styled(BUI)`
       background-color: #fce61d;
       display: flex;
       flex-direction: column;
+      img {
+        height: clamp(200px, 400px, 500px);
+      }
       .team-member-info {
         padding: 1rem;
         display: flex;
         flex-direction: column;
 
         gap: 1rem;
-        img {
-          height: 100%;
-        }
         /* h5,
         h6 {
           margin: 0;
