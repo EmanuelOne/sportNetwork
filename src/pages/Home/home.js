@@ -50,6 +50,7 @@ const settings = {
     },
   ],
 };
+console.log(sliderInfo);
 
 const Home = () => {
   return (
@@ -248,6 +249,7 @@ const HomeStyle = styled("div")`
       .slick-slide img {
         width: 90%;
         z-index: 5;
+        height: 280px;
       }
       .slick-dots li button:before {
         color: white;
