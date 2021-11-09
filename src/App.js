@@ -7,6 +7,7 @@ import Home from "pages/Home/home";
 import Header from "components/Header/header";
 import Footer from "components/Footer/footer";
 import OurTeam from "pages/OurTeam/our_team";
+import Article from "pages/article/article";
 export default function App() {
   const theme = createTheme({
     typography: {
@@ -31,6 +32,7 @@ export default function App() {
           <Header />
           <Switch>
             <Route path="/our_team" component={OurTeam} />
+            <Route path="/article" component={Article} />
             <Route path="/" exact component={Home}></Route>
           </Switch>
         </BrowserRouter>
