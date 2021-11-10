@@ -125,6 +125,7 @@ const Home = () => {
             Our team of workers are head down filed with potentials capable of
             promoting {<Link to="/">African sports </Link>}
             and importantly create a promising for young talents in the future
+            {<Link to="/our_team">view teams </Link>}
           </Typography>
         </div>
         <div className="our-team-slider">
