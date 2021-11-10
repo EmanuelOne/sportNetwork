@@ -8,6 +8,7 @@ import Header from "components/Header/header";
 import Footer from "components/Footer/footer";
 import OurTeam from "pages/OurTeam/our_team";
 import Article from "pages/article/article";
+import Contact from "pages/contact";
 export default function App() {
   const theme = createTheme({
     typography: {
@@ -34,6 +35,7 @@ export default function App() {
             <Route path="/our_team" component={OurTeam} />
             <Route path="/article" component={Article} />
             <Route path="/" exact component={Home}></Route>
+            <Route path="/contact" component={Contact}></Route>
           </Switch>
         </BrowserRouter>
         <Footer />
