@@ -3,7 +3,7 @@ import {Grid, makeStyles,} from '@material-ui/core'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import logo from '../../images/logo.png'
+import Logo from '../../images/logo.png'
 const useStyles = makeStyles({
     bg:{
         backgroundColor:'#fff',
@@ -44,8 +44,8 @@ export const ContactFooter = () =>{
     </Grid>
     
 <div className = {classes.end} >
-    <img src = {logo} className = {classes.img} />
-    <h3 className = {classes.txt}> Cras convallis feugiat felis eget venenatis. Sed leo tellus, luctus eget ante quis, rutrum dignissim enim. Morbi efficitur tellus non mauris tincidunt feugiat.  </h3>
+    <img src = "https://res.cloudinary.com/xenerr/image/upload/v1636611674/logo_bcnuvj.png" className = {classes.img} />
+    <h3 className= {classes.txt}> Cras convallis feugiat felis eget venenatis. Sed leo tellus, luctus eget ante quis, rutrum dignissim enim. Morbi efficitur tellus non mauris tincidunt feugiat.  </h3>
         <div>
             <h2 className = {classes.txt}> Contact Us</h2>
             <Grid container

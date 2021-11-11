@@ -46,7 +46,7 @@ export const MenuBar = (props)=>{
       
                 <Box className={classes.headerImage}>
                     <Box className={classes.imagebox} pt={1} pl={1}> 
-                       <img alt="" src="./assets/images/darklogo.png" width="202px" height="72px" />
+                       <img alt="" src="https://res.cloudinary.com/xenerr/image/upload/v1636611674/logo_bcnuvj.png" width="202px" height="72px" />
                     </Box>
                 </Box>
 

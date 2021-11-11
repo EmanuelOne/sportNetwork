@@ -63,7 +63,7 @@ export const ImageView = (props)=>{
     return (
 
     <Box  className = {classes.imageView}> 
-    <img src = './assets/images/logo.png'  className = {classes.img}/>
+    <img src = 'https://res.cloudinary.com/xenerr/image/upload/v1636611674/logo_bcnuvj.png'  className = {classes.img}/>
     <Typography className = {classes.typgo} variant = "h3"> we are ready to <span className = {classes.span}>hear </span> from you</Typography>
     <Typography variant = "h6" className = {classes.typ}> You can reach by calling us, sending a message or even pay a warm visit</Typography>
     </Box>
