@@ -124,7 +124,8 @@ const Home = () => {
           <Typography variant="p" color="text" component="p">
             Our team of workers are head down filed with potentials capable of
             promoting {<Link to="/">African sports </Link>}
-            and importantly create a promising for young talents in the future
+            and importantly create a promising for young talents in the future<br/>
+            {<Link to="/our_team">view team </Link>}
           </Typography>
         </div>
         <div className="our-team-slider">

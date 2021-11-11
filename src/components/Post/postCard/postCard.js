@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Box as MUICard, Typography } from "@mui/material";
 import { Box, styled } from "@mui/system";
+import {Link} from 'react-router-dom'
 const PostCard = ({ post: { image, category, headline, content } }) => {
   return (
     <Card className="card" sx={{ display: "flex" }}>
@@ -33,9 +34,11 @@ const PostCard = ({ post: { image, category, headline, content } }) => {
         >
           {content}
         </Typography>
+        <Link to="/article">
         <Button variant="contained" color="secondary" size="large">
           Read More
         </Button>
+        </Link>
       </Box>
     </Card>
   );
