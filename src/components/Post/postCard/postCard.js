@@ -3,7 +3,6 @@ import { Button, Box as MUICard, Typography } from "@mui/material";
 import { Box, styled } from "@mui/system";
 const PostCard = ({ post: { image, category, headline, content } }) => {
   return (
-    
     <Card className="card" sx={{ display: "flex" }}>
       <Box classname="post-image">
         <img src={image} alt="" />
@@ -58,6 +57,12 @@ const Card = styled(MUICard)`
   }
   box-shadow: none;
   gap: 1.5rem;
+  @media (min-width: 770px) and (max-width: 1000px) {
+    flex-direction: column;
+    .post-body {
+      gap: 1rem;
+    }
+  }
   @media (max-width: 768px) {
     flex-direction: column;
     .post-body {

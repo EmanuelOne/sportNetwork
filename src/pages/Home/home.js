@@ -56,7 +56,7 @@ const Home = () => {
   return (
     <HomeStyle bgimages={[Deposition, salahBg]}>
       <Box className="hero-section" sx={{ height: "100%", display: "flex" }}>
-        <Box className="error-container">
+        <Box className="hero-image">
           <img src={HeroImage} alt="" />
         </Box>
         <Box
@@ -189,9 +189,13 @@ const HomeStyle = styled("div")`
     width: 100%;
     display: flex;
     /* margin-top: 10px; */
+    .hero-image {
+      /* width: clamp(50%, 100%, 100%); */
+    }
     img {
       transform: translateY(-5%);
       height: 105%;
+      width: 100%;
     }
     .actions {
       display: flex;
@@ -295,6 +299,34 @@ const HomeStyle = styled("div")`
       }
     }
   }
+  @media (max-width: 1000px) {
+    .hero-section {
+      height: calc(80vh - 100px);
+    }
+    .preview-body {
+      width: auto;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  @media (min-width: 770px) and (max-width: 1000px) {
+    .hero-section {
+      .hero-image {
+        width: 50%;
+        img {
+          width: 100%;
+        }
+      }
+      .hero-body {
+        h3,
+        h6 {
+          width: 100%;
+        }
+      }
+    }
+  }
+
   @media (max-width: 768px) {
     .hero-section {
       height: 100vh;
