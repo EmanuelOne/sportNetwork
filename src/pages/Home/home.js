@@ -124,7 +124,8 @@ const Home = () => {
           <Typography variant="p" color="text" component="p">
             Our team of workers are head down filed with potentials capable of
             promoting {<Link to="/">African sports </Link>}
-            and importantly create a promising for young talents in the future<br/>
+            and importantly create a promising for young talents in the future
+            <br />
             {<Link to="/our_team">view team </Link>}
           </Typography>
         </div>
@@ -302,7 +303,6 @@ const HomeStyle = styled("div")`
   }
   @media (max-width: 1000px) {
     .hero-section {
-      height: calc(80vh - 100px);
     }
     .preview-body {
       width: auto;
@@ -313,6 +313,8 @@ const HomeStyle = styled("div")`
   }
   @media (min-width: 770px) and (max-width: 1000px) {
     .hero-section {
+      height: fit-content;
+      padding: 30px 0;
       .hero-image {
         width: 50%;
         img {
