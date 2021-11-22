@@ -104,7 +104,7 @@ const Home = () => {
             <img src={previewImage} alt="" />
             <div className="preview-text">
               <Typography variant="p" component="p">
-                Liperpool wins Champions League game against Tottenham Club
+              Basketball Africa League : Place à l'Elite 16, la seconde phase des éliminatoires
               </Typography>
             </div>
           </div>
