@@ -2,14 +2,15 @@ import React from "react";
 import { Box as BUI, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import ArticlePreview from "assets/images/articlePreview.png";
-import videoImage from "assets/images/HeroImage.png";
+import videoImage from "assets/images/previewImage.png";
+
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 const Article = () => {
   return (
     <Box className="article">
       <div className="headline">
         <Typography variant="h5" component="h5">
-          DeMoralizing: How DeMar DeRozan has transformed Chicago's offense
+        Basketball Africa League : Place à l'Elite 16, la seconde phase des éliminatoires
         </Typography>
         <div className="stamp">
           <Typography variant="p" component="p">
@@ -34,53 +35,27 @@ const Article = () => {
       </div>
       <Box className="content content1">
         <Typography variant="p" component="p">
-          It's easy to gravitate towards a tough shot-maker. How cool is it to
-          see a player defended well, pushed to an uncomfortable spot and knock
-          down a jumper or convert a contested finish anyway?
+        Le premier tour des éliminatoires de la Basketball Africa League s’est achevé dimanche avec les qualifications de Nigelec (Niger) et des Ulinzi Warriors (Kenya). Association Sportive Salé (Maroc), Matero Magic (Zambie), Cobra Sport (Sud Soudan) et ASPAC (Bénin) complètent le tableau de l’Elite 16.
         </Typography>
         <Typography variant="p" component="p">
-          DeRozan's off to a hot start, averaging 27.0 points with a 59.5% True
-          Shooting percentage to boot. Honestly, he's got it going from
-          everywhere. His shot distribution (along with field-goal percentages
-          by distance) is as follows:
+        On connaît désormais les 16 équipes qualifiées pour la seconde phase des éliminatoires de la BAL. Logé dans le groupe B, Nigelec s’impose devant ASPAC (65-35). Ce succès a permis à la formation nigérienne de s’emparer de la 2ème place du groupe derrière la Société Omnisports de l’Armée de Côte d’Ivoire.
         </Typography>{" "}
         <Typography variant="p" component="p" className="third1">
-          According to Rohr, the jet-heeled forward asked for permission to sit
-          out the World Cup qualifiers in a bid to concentrate on his club
-          career following a topsy-turvy 2021-22 campaign.
+        Dans le groupe D, ce sont les Ulinzi Warriors du Kenya qui se qualifient sur le terrain. Ils ont battu les Cobra Sport du Sud Soudan (53-47), lors de la 3e et dernière journée
         </Typography>{" "}
         <Typography variant="p" component="p">
-          “I spoke with him and he asked not to be selected,” the former Gabon
-          and Burkina Faso handler told France Bleu Gironde.
+        Championne du Maroc, l’AS Salé est directement qualifiée pour l’Elite 16. Le club marocain avait atteint les quarts de finale lors de la première édition de la BAL. Il y aura aussi Matero Magic (Zambie), Cobra Sport (Sud Soudan) et ASPAC (Bénin) qui ont fini meilleurs 3e des groupes..
         </Typography>
-        <Typography variant="p" component="p" className="last1">
-          “He made a very good argument about wanting to concentrate on the club
-          - he told me that the time had come for him to give his all, to fight
-          to regain his place in the Girondin's squad. I found his speech to be
-          very positive.
-        </Typography>
+   
       </Box>
       <div className="frame">
         <img src={videoImage} sx={{ width: "100%" }} />
       </div>
       <Box className="content content2">
         <Typography variant="p" component="p">
-          “We have a lot of wingers in our squad, that is true. The competition
-          is fierce, but I think what matters now is for him to have a starting
-          place at Girondins. He has the means, but he has to be in top physical
-          condition.”
+        Pour la seconde phase, les 16 équipes seront réparties en deux groupes (G et H) de 8. Les rencontres de l’Elite 16 se dérouleront du 16 au 21 novembre (Groupe G) et du 14 au 19 décembre (Groupe H). Les trois premières formations de chaque groupe se qualifieront pour la 2ème édition de la Basketball Africa League. Ces équipes rejoindront les champions du Nigeria, de la Tunisie, de l’Angola, du Sénégal, de l’Egypte et du Rwanda.
         </Typography>{" "}
-        <Typography variant="p" component="p">
-          In the 2021-22 campaign, Kalu has featured in just nine Ligue 1
-          matches – with three of them in the starting XI. His only goal of the
-          season campaign came in the 3-3 draw against Montpellier on September
-          22.
-        </Typography>{" "}
-        <Typography variant="p" component="p">
-          Since collapsing during a league game against Olympique Marseille in
-          August, the former Gent and AS Trencin man has been battling with one
-          injury or the other.
-        </Typography>
+           
       </Box>
     </Box>
   );
