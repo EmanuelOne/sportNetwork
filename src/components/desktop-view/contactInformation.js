@@ -48,7 +48,7 @@ export const ContactInformation = (props) => {
         </Grid>
 
         <Grid item xs={8}>
-          <Typography className={classes.ictext}>+234123456789 </Typography>
+          <Typography className={classes.ictext}>TK: Xballmedia </Typography>
         </Grid>
 
         <Grid item xs={3}>
@@ -56,7 +56,7 @@ export const ContactInformation = (props) => {
         </Grid>
         <Grid item xs={8}>
           <Typography className={classes.ictext}>
-            details@reachus.now{" "}
+          xballmedia00@gmail.com{" "}
           </Typography>
         </Grid>
         <Grid item xs={3}>
@@ -64,7 +64,7 @@ export const ContactInformation = (props) => {
         </Grid>
         <Grid item xs={8}>
           <Typography className={classes.ictext}>
-            No 2A my company venue{" "}
+            IN: Xball_media{" "}
           </Typography>
         </Grid>
       </Grid>
