@@ -104,11 +104,12 @@ export const ContactDesktopForm = (props) => {
   return (
     <Box className={classes.contactForm} backgroundColor = '#000000'>
       <Box
-     marginLeft='15%'
-     marginRight='10%'
+ 
         style={{
-          backgroundImage: "url(./assets/images/beautiful-young-woman.jpg)",
-          backgroundSize: "cover",         
+          backgroundImage: "url(../images/beautiful-young-woman.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center", 
+          backgroundRepeat: "no-repeat",    
           opacity: "0.8",
         }}
       >
