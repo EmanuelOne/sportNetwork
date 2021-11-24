@@ -44,8 +44,7 @@ export const ContactIcons = () => {
         </Grid>
       </Grid>
       <Box className={classes.end}>
-        <img src="https://res.cloudinary.com/xenerr/image/upload/v1636611674/logo_bcnuvj.png" className={classes.img} />
-        <Typography className={classes.txt}>
+               <Typography className={classes.txt}>
           {" "}
           Cras convallis feugiat felis eget venenatis. Sed leo tellus, luctus
           eget ante quis, rutrum dignissim enim. Morbi efficitur tellus non
