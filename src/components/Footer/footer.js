@@ -24,7 +24,7 @@ const Footer = () => {
           Contact us
         </Typography>
         <Typography variant="p" component="p">
-          <a href="mailto:">nicetree@gmail.com</a>
+          <a href="mailto:">xballmedia00@gmail.com</a>
         </Typography>
         <div className="socials">
           <FaInstagram />

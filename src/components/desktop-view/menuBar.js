@@ -42,16 +42,7 @@ export const MenuBar = (props)=>{
     return (
       <Box>
         <AppBar position="static" className={classes.appbar}>
-          <Toolbar className={classes.toolbar} >
-      
-                <Box className={classes.headerImage}>
-                    <Box className={classes.imagebox} pt={1} pl={1}> 
-                       <img alt="" src="https://res.cloudinary.com/xenerr/image/upload/v1636611674/logo_bcnuvj.png" width="202px" height="72px" />
-                    </Box>
-                </Box>
-
-
-          </Toolbar>
+    
         </AppBar>
       </Box>
     )
