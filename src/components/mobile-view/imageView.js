@@ -16,7 +16,7 @@ const useStyles = makeStyles({
 
     imageView: {
       background: 'linear-gradient(270deg, rgba(0, 0, 0, 0.7) 70.52%, rgba(0, 0, 0, 0.581) 101.46%)',
-      backgroundImage: `url(./assets/images/beautiful-young-woman.jpg)`,
+      backgroundImage: `url(../images/beautiful-young-woman.jpg)`,
       backgroundAttachment:'top',
       backgroundSize:'cover', 
       width:'100%',     

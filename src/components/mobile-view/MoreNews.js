@@ -37,10 +37,11 @@ export const MoreNews = (props) => {
         <Box className={classes.morenews}>
             <Box
                 style={{
-                    backgroundImage: "url(./assets/images/Embiid1.png)",
-                    backgroundSize: "cover",
-                    width: "100%",
-                    height: 275
+                    backgroundImage: "url(../images/beautiful-young-woman.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center", 
+          backgroundRepeat: "no-repeat",    
+          opacity: "0.8",
                 }}
             >
 
