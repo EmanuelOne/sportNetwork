@@ -81,17 +81,6 @@ const Home = () => {
             Take highly amazing shots and get your perfect desired images. Take
             your photography skills to a higher level.
           </Typography>
-          <div className="actions">
-            <Button
-              sx={{ fontSize: "20px", fontWeight: 600 }}
-              variant="contained"
-              color="primary"
-              size="large"
-            >
-              Register
-            </Button>
-            <Button>Register to get news updates</Button>
-          </div>
         </Box>
       </Box>
       {/* preview -> African BasketBall */}
