@@ -1,6 +1,5 @@
 [
   {
-<<<<<<< HEAD
     "name": "John Doe",
     "image": "/images/member1.png",
     "role": "Executive Manager"
@@ -29,25 +28,5 @@
     "image": "/images/member2.png",
     "name": "John Doe",
     "role": "Executive Manager"
-=======
-    "name": "Ke nan Nelle Ebongue-Rieumaihol",
-    "image": "/images/1.jpg",
-    "role": "Associate"
-  },
-  {
-    "image": "/images/1.jpg",
-    "name": "Riwan Rieumaihol",
-    "role": "Associate"
-  },
-  {
-    "name": "Abou Seye",
-    "image": "/images/1.jpg",
-    "role": "Journalist"
-  },
-  {
-    "name": "Logan Landry",
-    "image": "/images/1.jpg",
-    "role": "Community Manager"
->>>>>>> 856bf54dd573c48e86220641ecf1e69807504d5f
   }
 ]
