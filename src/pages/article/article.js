@@ -1,9 +1,9 @@
-import React from "react";
-import { Box as BUI, Typography } from "@mui/material";
-import { styled } from "@mui/system";
-import ArticlePreview from "assets/images/articlePreview.png";
-import videoImage from "assets/images/HeroImage.png";
-import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
+import React from 'react';
+import { Box as BUI, Typography } from '@mui/material';
+import { styled } from '@mui/system';
+import ArticlePreview from 'assets/images/articlePreview.png';
+import videoImage from 'assets/images/HeroImage.png';
+import { BsFacebook, BsInstagram, BsTwitter } from 'react-icons/bs';
 const Article = () => {
   return (
     <Box className="article">
@@ -14,13 +14,13 @@ const Article = () => {
         <div className="stamp">
           <Typography variant="p" component="p">
             Justina Chucks
-          </Typography>{" "}
+          </Typography>{' '}
           <Typography variant="p" component="p">
             {new Date().toLocaleDateString(undefined, {
-              year: "numeric",
-              day: "2-digit",
-              month: "short",
-              hour: "2-digit",
+              year: 'numeric',
+              day: '2-digit',
+              month: 'short',
+              hour: '2-digit',
             })}
           </Typography>
           <div className="icon">
@@ -43,12 +43,12 @@ const Article = () => {
           Shooting percentage to boot. Honestly, he's got it going from
           everywhere. His shot distribution (along with field-goal percentages
           by distance) is as follows:
-        </Typography>{" "}
+        </Typography>{' '}
         <Typography variant="p" component="p" className="third1">
           According to Rohr, the jet-heeled forward asked for permission to sit
           out the World Cup qualifiers in a bid to concentrate on his club
           career following a topsy-turvy 2021-22 campaign.
-        </Typography>{" "}
+        </Typography>{' '}
         <Typography variant="p" component="p">
           “I spoke with him and he asked not to be selected,” the former Gabon
           and Burkina Faso handler told France Bleu Gironde.
@@ -61,7 +61,7 @@ const Article = () => {
         </Typography>
       </Box>
       <div className="frame">
-        <img src={videoImage} sx={{ width: "100%" }} />
+        <img src={videoImage} sx={{ width: '100%' }} />
       </div>
       <Box className="content content2">
         <Typography variant="p" component="p">
@@ -69,13 +69,13 @@ const Article = () => {
           is fierce, but I think what matters now is for him to have a starting
           place at Girondins. He has the means, but he has to be in top physical
           condition.”
-        </Typography>{" "}
+        </Typography>{' '}
         <Typography variant="p" component="p">
           In the 2021-22 campaign, Kalu has featured in just nine Ligue 1
           matches – with three of them in the starting XI. His only goal of the
           season campaign came in the 3-3 draw against Montpellier on September
           22.
-        </Typography>{" "}
+        </Typography>{' '}
         <Typography variant="p" component="p">
           Since collapsing during a league game against Olympique Marseille in
           August, the former Gent and AS Trencin man has been battling with one

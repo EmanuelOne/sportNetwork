@@ -1,18 +1,18 @@
-import { Box, styled } from "@mui/system";
+import { Box, styled } from '@mui/system';
 // import {Div} from '@mui/material'
-import React from "react";
-import Deposition from "assets/images/depositionalBg.jpg";
-import salahBg from "assets/images/salahBg.png";
-import HeroImage from "assets/images/HeroImage.png";
-import { Button, Typography } from "@mui/material";
-import { Link } from "react-router-dom";
-import previewImage from "assets/images/previewImage.png";
-import PostCard from "components/Post/postCard/postCard";
-import postLists from "./postList.json";
-import sliderInfo from "./slider.info.json";
-import TeamSlider from "components/slider/teamSlider";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick-theme.css";
+import React from 'react';
+import Deposition from 'assets/images/depositionalBg.jpg';
+import salahBg from 'assets/images/salahBg.png';
+import HeroImage from 'assets/images/HeroImage.png';
+import { Button, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
+import previewImage from 'assets/images/previewImage.png';
+import PostCard from 'components/Post/postCard/postCard';
+import postLists from './postList.json';
+import sliderInfo from './slider.info.json';
+import TeamSlider from 'components/slider/teamSlider';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick-theme.css';
 
 const settings = {
   dots: true,
@@ -55,35 +55,35 @@ console.log(sliderInfo);
 const Home = () => {
   return (
     <HomeStyle bgimages={[Deposition, salahBg]}>
-      <Box className="hero-section" sx={{ height: "100%", display: "flex" }}>
+      <Box className="hero-section" sx={{ height: '100%', display: 'flex' }}>
         <Box className="error-container">
           <img src={HeroImage} alt="" />
         </Box>
         <Box
           sx={{
-            display: "flex",
-            alignItems: "center",
-            flexDirection: "column",
-            justifyContent: "center",
-            gap: "4rem",
-            width: "90%",
+            display: 'flex',
+            alignItems: 'center',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            gap: '4rem',
+            width: '90%',
           }}
           className="hero-body"
         >
           <Typography
             variant="h3"
             color="primary"
-            sx={{ fontWeight: 600, width: "80%" }}
+            sx={{ fontWeight: 600, width: '80%' }}
           >
             Get Latest Sports News Here
           </Typography>
-          <Typography variant="h6" color="text" sx={{ width: "80%" }}>
+          <Typography variant="h6" color="text" sx={{ width: '80%' }}>
             Take highly amazing shots and get your perfect desired images. Take
             your photography skills to a higher level.
           </Typography>
           <div className="actions">
             <Button
-              sx={{ fontSize: "20px", fontWeight: 600 }}
+              sx={{ fontSize: '20px', fontWeight: 600 }}
               variant="contained"
               color="primary"
               size="large"
@@ -124,7 +124,8 @@ const Home = () => {
           <Typography variant="p" color="text" component="p">
             Our team of workers are head down filed with potentials capable of
             promoting {<Link to="/">African sports </Link>}
-            and importantly create a promising for young talents in the future<br/>
+            and importantly create a promising for young talents in the future
+            <br />
             {<Link to="/our_team">view team </Link>}
           </Typography>
         </div>
@@ -148,17 +149,17 @@ const Home = () => {
       </Box>
       <Box
         sx={{
-          minHeight: "50vh",
-          width: "100%",
-          background: "#000",
-          marginTop: "-2%",
+          minHeight: '50vh',
+          width: '100%',
+          background: '#000',
+          marginTop: '-2%',
         }}
         className="team-footer-breaker"
       ></Box>
     </HomeStyle>
   );
 };
-const HomeStyle = styled("div")`
+const HomeStyle = styled('div')`
   /* background-color: #f0f; */
 
   width: 100%;

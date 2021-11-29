@@ -1,12 +1,12 @@
-import React from "react";
-import { Container } from "@mui/material";
-import { Box, styled } from "@mui/system";
-import logoSrc from "assets/images/logo.png";
-import { Link } from "react-router-dom";
-import { BiMenuAltRight } from "react-icons/bi";
-import { IoCloseOutline } from "react-icons/io5";
-import { Sling as Hamburger } from "hamburger-react";
-import useOnclickOutside from "react-cool-onclickoutside";
+import React from 'react';
+import { Container } from '@mui/material';
+import { Box, styled } from '@mui/system';
+import logoSrc from 'assets/images/logo.png';
+import { Link } from 'react-router-dom';
+import { BiMenuAltRight } from 'react-icons/bi';
+import { IoCloseOutline } from 'react-icons/io5';
+import { Sling as Hamburger } from 'hamburger-react';
+import useOnclickOutside from 'react-cool-onclickoutside';
 const Header = () => {
   const [mobile, setMobile] = React.useState(false);
   const handleMobile = () => {
@@ -127,8 +127,8 @@ const HeaderStyle = styled(Box)`
         a {
           color: white;
         }
-        position: ${({ mobile }) => (mobile ? "relative" : "absolute")};
-        top: ${({ mobile }) => (mobile ? "0px" : "-100000px")};
+        position: ${({ mobile }) => (mobile ? 'relative' : 'absolute')};
+        top: ${({ mobile }) => (mobile ? '0px' : '-100000px')};
       }
 
       .nav-links {

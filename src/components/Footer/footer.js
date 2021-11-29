@@ -1,11 +1,11 @@
-import React from "react";
-import { Box, styled } from "@mui/system";
+import React from 'react';
+import { Box, styled } from '@mui/system';
 
-import { Typography } from "@mui/material";
-import Logo from "assets/images/logo-footer.png";
-import { Twitter, Instagram } from "@mui/icons-material";
-import FooterBg from "assets/images/footerBg.png";
-import { FaTiktok, FaTwitter, FaInstagram } from "react-icons/fa";
+import { Typography } from '@mui/material';
+import Logo from 'assets/images/logo-footer.png';
+import { Twitter, Instagram } from '@mui/icons-material';
+import FooterBg from 'assets/images/footerBg.png';
+import { FaTiktok, FaTwitter, FaInstagram } from 'react-icons/fa';
 const Footer = () => {
   return (
     <FooterStyle bgimage={FooterBg}>
@@ -35,7 +35,7 @@ const Footer = () => {
     </FooterStyle>
   );
 };
-const FooterStyle = styled("div")`
+const FooterStyle = styled('div')`
   background: ${({ bgimage }) =>
     `linear-gradient(rgba(0,0,0, 0.9) , rgba(0,0,0, 0.9)),url(${bgimage})`};
   background-size: cover;

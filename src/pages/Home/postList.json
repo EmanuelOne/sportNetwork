@@ -1,5 +1,6 @@
 [
   {
+<<<<<<< HEAD
     "category": "FOOTBALL",
     "image": "/images/postImage1.png",
     "headline": "Liperpool wins Champions League cup Qualifier game against Tottenham Club",
@@ -24,5 +25,31 @@
 
     "headline": "Liperpool wins Champions League cup Qualifier game against Tottenham Club",
     "content": "Before tonight, Central African Republic hadn’t won a game since November 2019."
+=======
+    "category": "BASKETBALL",
+    "image": "/images/postImage1.png",
+    "headline": " Basketball Africa League",
+    "content": "Le premier tour des éliminatoires de la Basketball Africa League s’est achevé dimanche avec les qualifications de Nigelec (Niger) et des Ulinzi Warriors (Kenya). Association Sportive Salé (Maroc), Matero Magic (Zambie), Cobra Sport (Sud Soudan) et ASPAC (Bénin) complètent le tableau de l’Elite 16."
+  },
+  {
+    "image": "/images/postImage2.png",
+    "category": "BASKETBALL",
+    "headline": " Basketball Africa League",
+    "content": "Dans le groupe D, ce sont les Ulinzi Warriors du Kenya qui se qualifient sur le terrain. Ils ont battu les Cobra Sport du Sud Soudan (53-47), lors de la 3e et dernière journée"
+  },
+  {
+    "category": "BASKETBALL",
+    "image": "/images/postImage3.png",
+
+    "headline": " Basketball Africa League",
+    "content": "Championne du Maroc, l’AS Salé est directement qualifiée pour l’Elite 16. Le club marocain avait atteint les quarts de finale lors de la première édition de la BAL. Il y aura aussi Matero Magic (Zambie), Cobra Sport (Sud Soudan) et ASPAC (Bénin) qui ont fini meilleurs 3e des groupes."
+  },
+  {
+    "category": "BASKETBALL",
+    "image": "/images/postImage4.png",
+
+    "headline": " Basketball Africa League",
+    "content": "Pour la seconde phase, les 16 équipes seront réparties en deux groupes (G et H) de 8. Les rencontres de l’Elite 16 se dérouleront du 16 au 21 novembre (Groupe G) et du 14 au 19 décembre (Groupe H). Les trois premières formations de chaque groupe se qualifieront pour la 2ème édition de la Basketball Africa League. Ces équipes rejoindront les champions du Nigeria, de la Tunisie, de l’Angola, du Sénégal, de l’Egypte et du Rwanda.    "
+>>>>>>> 856bf54dd573c48e86220641ecf1e69807504d5f
   }
 ]
