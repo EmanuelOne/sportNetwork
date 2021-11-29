@@ -1,28 +1,26 @@
-import React from "react";
-import { Grid, makeStyles } from "@material-ui/core";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import logo from "../../images/logo.png";
-import { Box } from "@mui/system";
-import { Typography } from "@mui/material";
+import React from 'react';
+import { Grid, makeStyles } from '@material-ui/core';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import logo from '../../images/logo.png';
+import { Box } from '@mui/system';
+import { Typography } from '@mui/material';
 const useStyles = makeStyles({
   bg: {
-    backgroundColor: "#fff",
+    backgroundColor: '#fff',
 
-    height: "10em",
-    marginTop: "1em",
-   
-    
+    height: '10em',
+    marginTop: '1em',
   },
   end: {
-    backgroundColor: "#000",
+    backgroundColor: '#000',
   },
   img: {
-    alignItems: "center",
+    alignItems: 'center',
   },
   txt: {
-    color: "#fff",
+    color: '#fff',
   },
 });
 export const ContactIcons = () => {
@@ -30,10 +28,9 @@ export const ContactIcons = () => {
   return (
     <>
       <Grid container spacing={2} alignContent="center" className={classes.bg}>
-      <Grid item xs={3} sm={3}  />
-         
-        
-        <Grid item xs={2} sm={2} md={2} >
+        <Grid item xs={3} sm={3} />
+
+        <Grid item xs={2} sm={2} md={2}>
           <FacebookIcon />
         </Grid>
         <Grid item xs={2} sm={2} md={2} lg={2}>
@@ -46,10 +43,10 @@ export const ContactIcons = () => {
       <Box className={classes.end}>
         <img src={logo} className={classes.img} />
         <Typography className={classes.txt}>
-          {" "}
+          {' '}
           Cras convallis feugiat felis eget venenatis. Sed leo tellus, luctus
           eget ante quis, rutrum dignissim enim. Morbi efficitur tellus non
-          mauris tincidunt feugiat.{" "}
+          mauris tincidunt feugiat.{' '}
         </Typography>
         <Box>
           <Typography className={classes.txt}> Contact Us</Typography>
