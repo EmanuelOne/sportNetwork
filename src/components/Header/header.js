@@ -16,6 +16,10 @@ const Header = () => {
     // console.log("outside");
     setMobile(false);
   });
+  const closeMobile = () => {
+    setMobile(false);
+    console.log('close');
+  };
   return (
     <HeaderStyle {...{ mobile }}>
       <nav {...{ ref }}>
@@ -31,8 +35,12 @@ const Header = () => {
           </div>
         </div>
         <div className="menus">
-          <Link to="/">Basket Ball</Link>
-          <Link to="/contact">Contact</Link>
+          <Link onClick={closeMobile} to="/">
+            Basket Ball
+          </Link>
+          <Link onClick={closeMobile} to="/contact">
+            Contact
+          </Link>
         </div>
         <div className="nav-links">
           <Link to="/">Basket Ball</Link>
@@ -97,7 +105,7 @@ const HeaderStyle = styled(Box)`
         display: flex;
         color: white;
         width: 100%;
-
+        padding-bottom: 1rem;
         .icons {
           display: flex;
           width: 100%;
@@ -126,6 +134,11 @@ const HeaderStyle = styled(Box)`
         justify-content: center;
         a {
           color: white;
+          &:hover,
+          &:focus,
+          &:active {
+            color: rgba(255, 255, 0, 0.8);
+          }
         }
         position: ${({ mobile }) => (mobile ? 'relative' : 'absolute')};
         top: ${({ mobile }) => (mobile ? '0px' : '-100000px')};

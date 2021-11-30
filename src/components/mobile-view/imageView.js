@@ -24,8 +24,10 @@ const useStyles = makeStyles({
   },
   typgo: {
     paddingTop: '10%',
+    fontSize: '35px',
+    lineHeight: 1.5,
 
-    color: '#E5E5E5',
+    color: '#fff',
     fontFamily: 'Poppins',
     fontWeight: 'bold',
     textAlign: 'center',
@@ -54,15 +56,18 @@ export const ImageView = (props) => {
 
   return (
     <Box className={classes.imageView}>
-      <img src="./assets/images/logo.png" className={classes.img} />
-      <Typography className={classes.typgo} variant="h3">
-        {' '}
-        we are ready to <span className={classes.span}>hear </span> from you
-      </Typography>
-      <Typography variant="h6" className={classes.typ}>
-        {' '}
-        You can reach by calling us, sending a message or even pay a warm visit
-      </Typography>
+      <img src={`/images/beautiful-young-woman.png`} className={classes.img} />
+      <Box sx={{ backgroundColor: '#e5e5e5' }}>
+        <Typography className={classes.typgo} variant="h3">
+          {' '}
+          we are ready to <span className={classes.span}>hear </span> from you
+        </Typography>
+        <Typography variant="h6" className={classes.typ}>
+          {' '}
+          You can reach by calling us, sending a message or even pay a warm
+          visit
+        </Typography>
+      </Box>
     </Box>
   );
 };

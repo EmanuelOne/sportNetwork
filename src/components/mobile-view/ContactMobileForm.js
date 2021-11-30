@@ -83,66 +83,68 @@ export const ContactMobileForm = (props) => {
     <Box className={classes.contactForm}>
       <ImageView />
       <Box className={classes.rectangle}></Box>
-      <Box>
-        <Typography className={classes.txt}>
-          We won't be sharing any of your information with any one. We are
-          completely at your service
-        </Typography>
-      </Box>
-
-      <Box className={classes.txt1}>
-        <TextField
-          className={classes.txtField}
-          label="Full Name"
-          name="fullName"
-          value={formValue.fullName}
-          onChange={handleChange}
-          fullWidth
-        />
-        <TextField
-          className={classes.txtField}
-          label="Contact Address"
-          name="address"
-          value={formValue.address}
-          onChange={handleChange}
-          fullWidth
-        />
-        <TextField
-          className={classes.txtField}
-          label="Phone"
-          name="phone"
-          value={formValue.phone}
-          onChange={handleChange}
-          fullWidth
-        />
-        <TextField
-          className={classes.txtField}
-          name="message"
-          value={formValue.message}
-          onChange={handleChange}
-          multiline
-          rows={10}
-          variant="filled"
-          placeholder="Type your message here"
-          inputProps={{ className: classes.input }}
-          fullWidth
-        />
-        <Box textAlign="center">
-          <Button
-            className={`${classes.txtField} ${classes.btn}`}
-            onClick={handleSubmit}
-            endIcon={<TelegramIcon className={classes.cIcon} />}
-          >
-            SEND MESSAGE
-          </Button>
+      <Box sx={{ backgroundColor: '#fff' }}>
+        <Box sx={{ textAlign: 'center' }}>
+          <Typography className={classes.txt}>
+            We won't be sharing any of your information with any one. We are
+            completely at your service
+          </Typography>
         </Box>
-      </Box>
 
-      <Box>
-        <ContactInformation />
-      </Box>
-      <Box>
-        <ContactIcons />
+        <Box className={classes.txt1}>
+          <TextField
+            className={classes.txtField}
+            label="Full Name"
+            name="fullName"
+            value={formValue.fullName}
+            onChange={handleChange}
+            fullWidth
+          />
+          <TextField
+            className={classes.txtField}
+            label="Contact Address"
+            name="address"
+            value={formValue.address}
+            onChange={handleChange}
+            fullWidth
+          />
+          <TextField
+            className={classes.txtField}
+            label="Phone"
+            name="phone"
+            value={formValue.phone}
+            onChange={handleChange}
+            fullWidth
+          />
+          <TextField
+            className={classes.txtField}
+            name="message"
+            value={formValue.message}
+            onChange={handleChange}
+            multiline
+            rows={10}
+            variant="filled"
+            placeholder="Type your message here"
+            inputProps={{ className: classes.input }}
+            fullWidth
+          />
+          <Box textAlign="center">
+            <Button
+              className={`${classes.txtField} ${classes.btn}`}
+              onClick={handleSubmit}
+              endIcon={<TelegramIcon className={classes.cIcon} />}
+            >
+              SEND MESSAGE
+            </Button>
+          </Box>
+        </Box>
+
+        <Box>
+          <ContactInformation />
+        </Box>
+        <Box>
+          <ContactIcons />
+        </Box>
       </Box>
     </Box>
   );
