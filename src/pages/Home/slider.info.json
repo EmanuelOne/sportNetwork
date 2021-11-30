@@ -1,32 +1,22 @@
 [
   {
-    "name": "John Doe",
-    "image": "/images/member1.png",
-    "role": "Executive Manager"
+    "name": "Ke nan Nelle Ebongue-Rieumaihol",
+    "image": "/images/1.jpg",
+    "role": "Associate"
   },
   {
-    "image": "/images/member2.png",
-    "name": "John Doe",
-    "role": "Executive Manager"
+    "image": "/images/1.jpg",
+    "name": "Riwan Rieumaihol",
+    "role": "Associate"
   },
   {
-    "name": "John Doe",
-    "image": "/images/member3.png",
-    "role": "Executive Manager"
+    "name": "Abou Seye",
+    "image": "/images/1.jpg",
+    "role": "Journalist"
   },
   {
-    "name": "John Doe",
-    "image": "/images/member4.png",
-    "role": "Executive Manager"
-  },
-  {
-    "name": "John Doe",
-    "image": "/images/member1.png",
-    "role": "Executive Manager"
-  },
-  {
-    "image": "/images/member2.png",
-    "name": "John Doe",
-    "role": "Executive Manager"
+    "name": "Logan Landry",
+    "image": "/images/1.jpg",
+    "role": "Community Manager"
   }
 ]
