@@ -16,11 +16,25 @@ const useStyles = makeStyles({
   imageView: {
     background:
       'linear-gradient(270deg, rgba(0, 0, 0, 0.7) 70.52%, rgba(0, 0, 0, 0.581) 101.46%)',
-    backgroundImage: `url(./assets/images/beautiful-young-woman.jpg)`,
-    backgroundAttachment: 'top',
+
     backgroundSize: 'cover',
     width: '100%',
-    height: '571px',
+    height: '50vh',
+    position: 'relative',
+    '&:before': {
+      position: 'absolute',
+      zIndex: '-1',
+      left: 0,
+      top: 0,
+      right: 0,
+      bottom: 0,
+      content: '""',
+      backgroundImage: `url(/images/beautiful-young-woman.png)`,
+      opacity: 1,
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+    },
   },
   typgo: {
     paddingTop: '10%',
@@ -56,8 +70,15 @@ export const ImageView = (props) => {
 
   return (
     <Box className={classes.imageView}>
-      <img src={`/images/beautiful-young-woman.png`} className={classes.img} />
-      <Box sx={{ backgroundColor: '#e5e5e5' }}>
+      <Box
+        sx={{
+          padding: '.1rem 1rem',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          height: '100%',
+        }}
+      >
         <Typography className={classes.typgo} variant="h3">
           {' '}
           we are ready to <span className={classes.span}>hear </span> from you
