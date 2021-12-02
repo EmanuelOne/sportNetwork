@@ -139,10 +139,10 @@ export const ContactMobileForm = (props) => {
           </Box>
         </Box>
 
-        <Box>
+        <Box sx={{ overflow: 'hidden' }}>
           <ContactInformation />
         </Box>
-        <Box>
+        <Box sx={{ overflow: 'hidden' }}>
           <ContactIcons />
         </Box>
       </Box>
